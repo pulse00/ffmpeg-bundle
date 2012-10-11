@@ -1,10 +1,16 @@
 {
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/pulse00/PHP-FFmpeg.git"
+        }
+    ],
     "name": "pulse00/ffmpeg-bundle",
     "description": "Symfony bundle to provide PHP-FFmpeg as a Symfony service (https://github.com/alchemy-fr/PHP-FFmpeg)",
     "keywords": ["ffmpeg", "multimedia"],
     "type": "symfony-bundle",
     "require": {
-        "php-ffmpeg/php-ffmpeg": "dev-master"
+        "php-ffmpeg/php-ffmpeg": "dev-monolog"
     },
     "minimum-stability": "dev",
     "authors": [
