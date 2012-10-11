@@ -1,6 +1,6 @@
 <?php
 
-namespace pulse00\ffmpegBundle\DependencyInjection;
+namespace Dubture\FFmpegBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class pulse00ffmpegExtension extends Extension
+class DubtureFFmpegExtension extends Extension
 {
     /**
      * {@inheritDoc}
@@ -24,5 +24,7 @@ class pulse00ffmpegExtension extends Extension
 
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.xml');
+
+        $container->setParameter('dubture_ffmpeg.binary', $config['binary']);
     }
 }

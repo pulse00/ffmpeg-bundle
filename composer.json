@@ -18,5 +18,10 @@
             "name": "Robert Gruendler",
             "email": "r.gruendler@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-0": { "Dubture\\FFmpegBundle": "" }
+    },
+    "target-dir": "Dubture/FFmpegBundle",
+
 }
