@@ -1,5 +1,5 @@
 {
-    "name": "pulse00/ffmpegBundle",
+    "name": "pulse00/ffmpeg-bundle",
     "description": "Symfony bundle to provide PHP-FFmpeg as a Symfony service (https://github.com/alchemy-fr/PHP-FFmpeg)",
     "keywords": ["ffmpeg", "multimedia"],
     "type": "symfony-bundle",
