@@ -8,6 +8,7 @@
     "name": "pulse00/ffmpeg-bundle",
     "description": "Symfony bundle to provide PHP-FFmpeg as a Symfony service (https://github.com/alchemy-fr/PHP-FFmpeg)",
     "keywords": ["ffmpeg", "multimedia"],
+    "license": "MIT",
     "type": "symfony-bundle",
     "require": {
         "php-ffmpeg/php-ffmpeg": "dev-monolog"
@@ -22,6 +23,6 @@
     "autoload": {
         "psr-0": { "Dubture\\FFmpegBundle": "" }
     },
-    "target-dir": "Dubture/FFmpegBundle",
+    "target-dir": "Dubture/FFmpegBundle"
 
 }
