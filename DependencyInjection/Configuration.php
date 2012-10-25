@@ -22,7 +22,8 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-                ->scalarNode('binary')->isRequired()
+                ->scalarNode('ffmpeg_binary')->isRequired()->end()
+                ->scalarNode('ffprobe_binary')->isRequired()->end()
             ->end()
         ->end();
 

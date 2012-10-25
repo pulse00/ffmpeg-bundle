@@ -6,6 +6,7 @@
 
     <parameters>
         <parameter key="dubture_ffmpeg.ffmpeg.class">FFMpeg\FFMpeg</parameter>
+        <parameter key="dubture_ffmpeg.ffprobe.class">FFMpeg\FFProbe</parameter>
     </parameters>
 
     <services>
@@ -13,5 +14,11 @@
         	<argument>%dubture_ffmpeg.binary%</argument>
             <argument type="service" id="logger" />
         </service>
+        
+        <service id="dubture_ffmpeg.ffprobe" class="%dubture_ffmpeg.ffprobe.class%">
+            <argument>%dubture_ffprobe.binary%</argument>
+            <argument type="service" id="logger" />
+        </service>
+        
     </services>
 </container>
