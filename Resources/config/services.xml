@@ -7,18 +7,21 @@
     <parameters>
         <parameter key="dubture_ffmpeg.ffmpeg.class">FFMpeg\FFMpeg</parameter>
         <parameter key="dubture_ffmpeg.ffprobe.class">FFMpeg\FFProbe</parameter>
+        <parameter key="dubture_ffmpeg.binary_timeout">60</parameter>
     </parameters>
 
     <services>
         <service id="dubture_ffmpeg.ffmpeg" class="%dubture_ffmpeg.ffmpeg.class%">
         	<argument>%dubture_ffmpeg.binary%</argument>
             <argument type="service" id="logger" />
+            <argument type="string">%dubture_ffmpeg.binary_timeout%</argument>
         </service>
-        
+
         <service id="dubture_ffmpeg.ffprobe" class="%dubture_ffmpeg.ffprobe.class%">
             <argument>%dubture_ffprobe.binary%</argument>
             <argument type="service" id="logger" />
+            <argument type="string">%dubture_ffmpeg.binary_timeout%</argument>
         </service>
-        
+
     </services>
 </container>
