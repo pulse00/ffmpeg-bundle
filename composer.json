@@ -5,7 +5,7 @@
     "license": "MIT",
     "type": "symfony-bundle",
     "require": {
-        "php-ffmpeg/php-ffmpeg": "0.2.*"
+        "php-ffmpeg/php-ffmpeg": "0.2.0"
     },
     "minimum-stability": "dev",
     "authors": [
