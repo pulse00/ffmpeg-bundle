@@ -21,8 +21,8 @@ Using the service:
 ```php
 	$ffmpeg = $this->get('dubture_ffmpeg.ffmpeg');
 	$ffmpeg->open('Video.mpeg')
-    		->encode($new WebM(), 'file.webm')
-    		->encode($x264, 'file.mp4')
-    		->encode($new Ogg(), 'file.ogv')
+    		->encode(new WebM(), 'file.webm')
+    		->encode(new X264, 'file.mp4')
+    		->encode(new Ogg(), 'file.ogv')
     		->close();
 ```
