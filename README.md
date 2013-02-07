@@ -11,7 +11,8 @@ Configure which ffmpeg binary to use in `config.yml`:
 
 ``` yaml
   dubture_f_fmpeg:
-    binary: /usr/bin/ffmpeg
+    ffmpeg_binary: /usr/bin/ffmpeg
+    ffprobe_binary: /usr/bin/ffprobe
 
 ```
 
