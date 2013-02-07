@@ -11,7 +11,8 @@ Configure which ffmpeg binary to use in `config.yml`:
 
 ``` yaml
   dubture_f_fmpeg:
-    binary: /usr/bin/ffmpeg
+    ffmpeg_binary: /usr/bin/ffmpeg
+    ffprobe_binary: /usr/bin/ffprobe
 
 ```
 
@@ -21,8 +22,8 @@ Using the service:
 ```php
 	$ffmpeg = $this->get('dubture_ffmpeg.ffmpeg');
 	$ffmpeg->open('Video.mpeg')
-    		->encode($new WebM(), 'file.webm')
-    		->encode($x264, 'file.mp4')
-    		->encode($new Ogg(), 'file.ogv')
+    		->encode(new WebM(), 'file.webm')
+    		->encode(new X264, 'file.mp4')
+    		->encode(new Ogg(), 'file.ogv')
     		->close();
 ```
