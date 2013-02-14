@@ -24,6 +24,7 @@ class Configuration implements ConfigurationInterface
             ->children()
                 ->scalarNode('ffmpeg_binary')->isRequired()->end()
                 ->scalarNode('ffprobe_binary')->isRequired()->end()
+                ->scalarNode('binary_timeout')->defaultValue(60)->end()
             ->end()
         ->end();
 

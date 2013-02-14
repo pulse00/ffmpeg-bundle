@@ -7,7 +7,6 @@
     <parameters>
         <parameter key="dubture_ffmpeg.ffmpeg.class">FFMpeg\FFMpeg</parameter>
         <parameter key="dubture_ffmpeg.ffprobe.class">FFMpeg\FFProbe</parameter>
-        <parameter key="dubture_ffmpeg.binary_timeout">60</parameter>
     </parameters>
 
     <services>
