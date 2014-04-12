@@ -13,7 +13,8 @@ Configure which ffmpeg binary to use in `config.yml`:
   dubture_f_fmpeg:
     ffmpeg_binary: /usr/bin/ffmpeg
     ffprobe_binary: /usr/bin/ffprobe
-
+    binary_timeout: 300 # Use 0 for infinite
+    threads_count: 4
 ```
 
 
@@ -21,9 +22,16 @@ Using the service:
 
 ```php
 	$ffmpeg = $this->get('dubture_ffmpeg.ffmpeg');
-	$ffmpeg->open('Video.mpeg')
-    		->encode(new WebM(), 'file.webm')
-    		->encode(new X264, 'file.mp4')
-    		->encode(new Ogg(), 'file.ogv')
-    		->close();
+
+	// Open video
+	$video = $ffmpeg->open('/your/source/folder/input.avi');
+	
+	// Resize to 1280x720
+	$video
+        ->filters()
+        ->resize(new Dimension(1280, 720), ResizeFilter::RESIZEMODE_INSET)
+        ->synchronize();
+
+    // Start transcoding and save video
+    $video->save(new X264(), '/your/target/folder/video.mp4');
 ```
