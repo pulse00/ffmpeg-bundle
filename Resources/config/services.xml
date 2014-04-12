@@ -15,6 +15,7 @@
                 <argument key="ffmpeg.binaries">%dubture_ffmpeg.binary%</argument>
                 <argument key="ffprobe.binaries">%dubture_ffprobe.binary%</argument>
                 <argument key="timeout">%dubture_ffmpeg.binary_timeout%</argument>
+                <argument key="ffmpeg.threads">%dubture_ffmpeg.threads_count%</argument>
             </argument>
             <argument id="logger" type="service"/>
         </service>

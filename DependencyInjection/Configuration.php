@@ -25,6 +25,7 @@ class Configuration implements ConfigurationInterface
                 ->scalarNode('ffmpeg_binary')->isRequired()->end()
                 ->scalarNode('ffprobe_binary')->isRequired()->end()
                 ->scalarNode('binary_timeout')->defaultValue(60)->end()
+                ->scalarNode('threads_count')->defaultValue(4)->end()
             ->end()
         ->end();
 

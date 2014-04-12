@@ -28,5 +28,6 @@ class DubtureFFmpegExtension extends Extension
         $container->setParameter('dubture_ffmpeg.binary', $config['ffmpeg_binary']);
         $container->setParameter('dubture_ffprobe.binary', $config['ffprobe_binary']);
         $container->setParameter('dubture_ffmpeg.binary_timeout', $config['binary_timeout']);
+        $container->setParameter('dubture_ffmpeg.threads_count', $config['threads_count']);
     }
 }
