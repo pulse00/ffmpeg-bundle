@@ -15,8 +15,6 @@ Configure which ffmpeg binary to use in `config.yml`:
     ffprobe_binary: /usr/bin/ffprobe
     binary_timeout: 300 # Use 0 for infinite
     threads_count: 4
-
-
 ```
 
 
