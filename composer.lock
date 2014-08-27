@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "b8c41d003efbf40a4cdd306455c6d407",
+    "hash": "5d4582d1a5530cda8c1003c5cd03eec7",
     "packages": [
         {
             "name": "alchemy/binary-driver",
@@ -290,7 +290,7 @@
         },
         {
             "name": "php-ffmpeg/php-ffmpeg",
-            "version": "0.5.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-FFMpeg/PHP-FFMpeg.git",
@@ -500,7 +500,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "php-ffmpeg/php-ffmpeg": 20
+    },
     "platform": [],
     "platform-dev": []
 }

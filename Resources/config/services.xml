@@ -10,7 +10,7 @@
     </parameters>
 
     <services>
-        <service id="dubture_ffmpeg.ffmpeg" class="%dubture_ffmpeg.ffmpeg.class%" factory-class="%dubture_ffmpeg.ffmpeg.class%" factory-method="create">
+        <service id="dubture_ffmpeg.ffmpeg" class="%dubture_ffmpeg.ffmpeg.class%" factory-class="%dubture_ffmpeg.ffmpeg.class%" factory-method="create" lazy="true">
             <argument type="collection">
                 <argument key="ffmpeg.binaries">%dubture_ffmpeg.binary%</argument>
                 <argument key="ffprobe.binaries">%dubture_ffprobe.binary%</argument>
@@ -20,7 +20,7 @@
             <argument id="logger" type="service"/>
         </service>
 
-        <service id="dubture_ffmpeg.ffprobe" class="%dubture_ffmpeg.ffprobe.class%" factory-class="%dubture_ffmpeg.ffprobe.class%" factory-method="create">
+        <service id="dubture_ffmpeg.ffprobe" class="%dubture_ffmpeg.ffprobe.class%" factory-class="%dubture_ffmpeg.ffprobe.class%" factory-method="create" lazy="true">
             <argument type="collection">
                 <argument key="ffmpeg.binaries">%dubture_ffmpeg.binary%</argument>
                 <argument key="ffprobe.binaries">%dubture_ffprobe.binary%</argument>
