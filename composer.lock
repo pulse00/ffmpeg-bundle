@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "0d33002e745961db0f90fddcbe99e4e8",
+    "hash": "b8c41d003efbf40a4cdd306455c6d407",
     "packages": [
         {
             "name": "alchemy/binary-driver",
@@ -290,16 +290,16 @@
         },
         {
             "name": "php-ffmpeg/php-ffmpeg",
-            "version": "0.5.0",
+            "version": "0.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-FFMpeg/PHP-FFMpeg.git",
-                "reference": "3a0c6a1e1e1fe1d367ed0efbc6d249009c4105db"
+                "reference": "c8949fe3df89edd7692368cc110a51a27971f28a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-FFMpeg/PHP-FFMpeg/zipball/3a0c6a1e1e1fe1d367ed0efbc6d249009c4105db",
-                "reference": "3a0c6a1e1e1fe1d367ed0efbc6d249009c4105db",
+                "url": "https://api.github.com/repos/PHP-FFMpeg/PHP-FFMpeg/zipball/c8949fe3df89edd7692368cc110a51a27971f28a",
+                "reference": "c8949fe3df89edd7692368cc110a51a27971f28a",
                 "shasum": ""
             },
             "require": {
@@ -355,7 +355,7 @@
                 "video",
                 "video processing"
             ],
-            "time": "2014-08-12 19:05:45"
+            "time": "2014-08-26 08:46:56"
         },
         {
             "name": "psr/log",
