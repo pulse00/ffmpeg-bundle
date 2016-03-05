@@ -23,7 +23,14 @@ class DubtureFFmpegExtension extends Extension
         $config = $this->processConfiguration($configuration, $configs);
 
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
-        $loader->load('services.xml');
+
+        // Depending on the dependency injection version load the corresponding factories
+        // The new setFactory method was introduced in 2.6 and the old way removed in 3.0
+        if (method_exists('Symfony\\Component\\DependencyInjection\\Definition', 'setFactory')) {
+            $loader->load('factories.xml');
+        } else {
+            $loader->load('factories-2.3.xml');
+        }
 
         $container->setParameter('dubture_ffmpeg.binary', $config['ffmpeg_binary']);
         $container->setParameter('dubture_ffprobe.binary', $config['ffprobe_binary']);
