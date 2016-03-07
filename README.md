@@ -38,3 +38,7 @@ Using the service:
     // Start transcoding and save video
     $video->save(new X264(), '/your/target/folder/video.mp4');
 ```
+
+### Contributors
+
+- [patkar](https://github.com/patkar)
