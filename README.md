@@ -1,9 +1,10 @@
 Symfony ffmpeg bundle
 =====================
 
+[![Build Status](https://travis-ci.org/pulse00/ffmpeg-bundle.svg?branch=master)](https://travis-ci.org/pulse00/ffmpeg-bundle)
 [![Latest Stable Version](https://poser.pugx.org/pulse00/ffmpeg-bundle/v/stable.svg)](https://packagist.org/packages/pulse00/ffmpeg-bundle) [![Total Downloads](https://poser.pugx.org/pulse00/ffmpeg-bundle/downloads.svg)](https://packagist.org/packages/pulse00/ffmpeg-bundle) [![Latest Unstable Version](https://poser.pugx.org/pulse00/ffmpeg-bundle/v/unstable.svg)](https://packagist.org/packages/pulse00/ffmpeg-bundle) [![License](https://poser.pugx.org/pulse00/ffmpeg-bundle/license.svg)](https://packagist.org/packages/pulse00/ffmpeg-bundle)
 
-This bundle provides a simple wrapper for the [PHP_FFmpeg](https://github.com/alchemy-fr/PHP-FFmpeg) library, 
+This bundle provides a simple wrapper for the [PHP_FFmpeg](https://github.com/alchemy-fr/PHP-FFmpeg) library,
 exposing the library as a Symfony service.
 
 ### Example usage
@@ -27,7 +28,7 @@ Using the service:
 
 	// Open video
 	$video = $ffmpeg->open('/your/source/folder/input.avi');
-	
+
 	// Resize to 1280x720
 	$video
         ->filters()
