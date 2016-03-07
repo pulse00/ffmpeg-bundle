@@ -1,0 +1,3 @@
+dubture_f_fmpeg:
+    ffmpeg_binary: /usr/local/bin/ffmpeg
+    ffprobe_binary: /usr/local/bin/ffprobe

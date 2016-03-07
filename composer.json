@@ -1,22 +1,26 @@
 {
     "name": "pulse00/ffmpeg-bundle",
-    "description": "Symfony bundle to provide PHP-FFmpeg as a Symfony service (https://github.com/alchemy-fr/PHP-FFmpeg)",
-    "keywords": ["ffmpeg", "multimedia"],
-    "license": "MIT",
     "type": "symfony-bundle",
-    "require": {
-        "php-ffmpeg/php-ffmpeg": "0.5.*@dev"
-    },
-    "minimum-stability": "dev",
+    "description": "Symfony bundle to provide PHP-FFmpeg as a Symfony service (https://github.com/alchemy-fr/PHP-FFmpeg)",
+    "keywords": ["multimedia", "video processing", "video", "audio processing", "audio", "avconv", "ffmpeg", "avprobe", "ffprobe"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Robert Gruendler",
             "email": "r.gruendler@gmail.com"
         }
     ],
-    "autoload": {
-        "psr-0": { "Dubture\\FFmpegBundle": "" }
+    "require": {
+        "php": "^5.3.9 || ^7.0",
+        "php-ffmpeg/php-ffmpeg": "^0.5 || ^0.6",
+        "symfony/dependency-injection": "^2.3 || ^3.0",
+        "symfony/framework-bundle": "^2.3 || ^3.0"
     },
-    "target-dir": "Dubture/FFmpegBundle"
-
+    "require-dev": {
+        "matthiasnoback/symfony-dependency-injection-test": "~0.7",
+        "phpunit/phpunit": "^4.8"
+    },
+    "autoload": {
+        "psr-4": { "Dubture\\FFmpegBundle\\": "" }
+    }
 }

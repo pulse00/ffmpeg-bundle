@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="dubture_ffmpeg.ffmpeg" class="FFMpeg\FFMpeg" factory-class="FFMpeg\FFMpeg" factory-method="create" lazy="true">
+            <argument type="collection">
+                <argument key="ffmpeg.binaries">%dubture_ffmpeg.binary%</argument>
+                <argument key="ffprobe.binaries">%dubture_ffprobe.binary%</argument>
+                <argument key="timeout">%dubture_ffmpeg.binary_timeout%</argument>
+                <argument key="ffmpeg.threads">%dubture_ffmpeg.threads_count%</argument>
+            </argument>
+            <argument id="logger" type="service"/>
+        </service>
+
+        <service id="dubture_ffmpeg.ffprobe" class="FFMpeg\FFProbe" factory-class="FFMpeg\FFProbe" factory-method="create" lazy="true">
+            <argument type="collection">
+                <argument key="ffmpeg.binaries">%dubture_ffmpeg.binary%</argument>
+                <argument key="ffprobe.binaries">%dubture_ffprobe.binary%</argument>
+            </argument>
+            <argument id="logger" type="service"/>
+        </service>
+    </services>
+</container>
