@@ -29,7 +29,7 @@ public function registerBundles()
 {
     $bundles = array(
       // ...
-      new Dubture\FFmpegBundle\FFmpegBundle(),
+      new Dubture\FFmpegBundle\DubtureFFmpegBundle(),
       // ...
     );
 }
