@@ -1,12 +1,17 @@
 language: php
 
+dist: trusty
+
 php:
   - 5.3
   - 5.4
   - 5.5
   - 5.6
   - 7.0
-  - hhvm
+  - 7.1
+  - 7.2
+  - 7.3
+  - 7.4
 
 sudo: false
 
@@ -27,8 +32,26 @@ matrix:
       env: SYMFONY_VERSION=2.8.*@dev
     - php: 7.0
       env: SYMFONY_VERSION=^3.0
+    - php: 7.1
+      env: SYMFONY_VERSION=^3.0
     - php: 7.0
       env: SYMFONY_VERSION=^3.0@dev
+    - php: 7.1
+      env: SYMFONY_VERSION=^4.0
+    - php: 7.2
+      env: SYMFONY_VERSION=^4.0
+    - php: 7.3
+      env: SYMFONY_VERSION=^4.0
+    - php: 7.4
+      env: SYMFONY_VERSION=^4.0
+      dist: bionic
+    - php: 7.2
+      env: SYMFONY_VERSION=^5.0
+    - php: 7.3
+      env: SYMFONY_VERSION=^5.0
+    - php: 7.4
+      env: SYMFONY_VERSION=^5.0
+      dist: bionic
     - php: 5.3
       env: COMPOSER_FLAGS="--prefer-lowest"
 
